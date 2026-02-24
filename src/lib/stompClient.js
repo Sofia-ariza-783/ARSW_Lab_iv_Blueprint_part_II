@@ -1,5 +1,5 @@
 import { Client } from '@stomp/stompjs'
-import SockJS from 'sockjs-client' // si quieres fallback
+import SockJS from 'sockjs-client'
 
 export function createStompClient(baseUrl) {
   const client = new Client({

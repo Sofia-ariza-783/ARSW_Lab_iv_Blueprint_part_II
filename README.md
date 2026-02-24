@@ -65,7 +65,7 @@ Crea `.env.local` en la raíz del proyecto **Front**:
 VITE_API_BASE=http://localhost:8080
 
 # Tiempo real: apunta a uno u otro según el backend que uses
-VITE_IO_BASE=http://localhost:3001     # si usas Socket.IO (Node)
+VITE_IO_BASE=http://localhost:3002     # si usas Socket.IO (Node)
 VITE_STOMP_BASE=http://localhost:8080  # si usas STOMP (Spring)
 ```
 En la UI, selecciona la tecnología en el **selector RT**.
@@ -82,9 +82,9 @@ https://github.com/DECSIS-ECI/example-backend-socketio-node-/blob/main/README.md
 ```bash
 npm i
 npm run dev
-# expone: http://localhost:3001
+# expone: http://localhost:3002
 # prueba rápida del estado inicial:
-curl http://localhost:3001/api/blueprints/juan/plano-1
+curl http://localhost:3002/api/blueprints/juan/plano-1
 ```
 
 **Opción B — STOMP (Spring Boot)**  
